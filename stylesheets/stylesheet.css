@@ -439,15 +439,19 @@ Personal Styles
     /*background-color:#373737;
     max-width: 1000px;*/
     height:100px;
+    margin:5px;
+    padding:5px;
   }
 
    ul#navi_main a {
     text-decoration: none;
+    margin:5px;
     padding:5px;
    }
    
    ul#navi_main a:hover {
     text-decoration: none;
+    margin:5px;
     padding:5px;
    }
    
@@ -456,6 +460,7 @@ Personal Styles
      position: relative;
      list-style-type: none;
      text-align: center;
+     margin:5px;
      padding:5px;
    }
    
@@ -475,24 +480,28 @@ Personal Styles
      width: 130px;
      height:160px;
      padding:10px;
+     margin:5px;
    }
    
    ul#navi_main li.projekte {
      width: 130px;
      height:160px;
      padding:10px;
+     margin:5px;
    }
    
    ul#navi_main li.downloads {
      width: 130px;
      height:160px;
      padding:10px;
+     margin:5px;
    }
    
    ul#navi_main li.kontakt {
      width: 130px;
      height:160px;
      padding:10px;
+     margin:5px;
    }
    
       ul#navi_main li.home:hover {
@@ -502,6 +511,7 @@ Personal Styles
        background-color:#373737;
        border-radius: 10px;
        box-shadow: 2px 2px 5px #000000;
+       margin:5px;
     }
      
      ul#navi_main li.projekte:hover {
@@ -511,6 +521,7 @@ Personal Styles
        background-color:#373737;
        border-radius: 10px;
        box-shadow: 2px 2px 5px #000000;
+       margin:5px;
     }
    
      ul#navi_main li.downloads:hover {
@@ -520,6 +531,7 @@ Personal Styles
        background-color:#373737;
        border-radius: 10px;
        box-shadow: 2px 2px 5px #000000;
+       margin:5px;
     }
    
      ul#navi_main li.kontakt:hover {
@@ -529,6 +541,7 @@ Personal Styles
        background-color:#373737;
        border-radius: 10px;
        box-shadow: 2px 2px 5px #000000;
+       margin:5px;
      }
      
      ul#navi_main li ul.dropdown_navi {
@@ -537,6 +550,7 @@ Personal Styles
        position: relative;
        top:10px;
        /*height:60px;*/
+       margin:5px;
      }
      
      ul#navi_main li ul li {
@@ -544,7 +558,7 @@ Personal Styles
        text-align: left;
        /*display: block;*/
        padding: 5px;
-       margin-bottom:0px;
+       margin:5px;
      }
      
      ul#navi_main li ul li:hover {
@@ -555,14 +569,17 @@ Personal Styles
        background-color:#575757;
        text-decoration: underline;
        border-radius: 10px;
+       margin:5px;
      }
      
      ul#navi_main li>ul {
        display: none;
+       margin:5px;
      }
      
      ul#navi_main li:hover>ul {
        display: block;
+       margin:5px;
      }
    
    
