@@ -47,7 +47,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #FFAB00;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -139,6 +139,14 @@ blockquote {
   border-left: 3px solid #bbb;
 }
 
+hr {
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+  /*border: none;
+  background: url('../images/bg_hr.png') repeat-x center;*/                  /*----BEARBEITEN----*/
+}
+
 /*
 ul, ol, dl {
   margin-bottom: 15px
@@ -170,13 +178,6 @@ dl p {
   font-style: italic;
 }
 
-hr {
-  height: 1px;
-  margin-bottom: 5px;
-  border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
-}
-
 table {
   border: 1px solid #373737;
   margin-bottom: 20px;
@@ -204,9 +205,11 @@ form {
 
 html { 
   height: 100.2%;
+  background: #212121;
 }
 
 body {
+  float:top;
   box-sizing: border-box;
   color:#373737;
   background: #212121;
@@ -215,6 +218,10 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   margin:0px;
+  padding: 0px;
+  box-shadow: 2px 0px 0px #000000;
+  min-height: 100.2%;
+  width: auto;
 }
 
 /*header*/
@@ -225,11 +232,11 @@ div#header_wrap {
   background: -webkit-linear-gradient(top, #373737, #212121);
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);  
+  background: linear-gradient(top, #373737, #212121); 
 }
 
 div#header_wrap .inner {                 
-  padding: 50px 10px 30px 10px;
+  padding: 50px 10px 60px 10px;
 }
 
 /*header: Titel & Unterueberschrift*/
@@ -262,7 +269,7 @@ ul#navi_main li:hover>ul {
 
 /*header: Navigation     ------------------------   ANFANG   ------------------------*/
 
-div#navigation_main {
+div#navigation_main { 
   width:1000px;
 }
 
@@ -300,7 +307,7 @@ ul#navi_main li {
 /*Menuepunkte (blau)*/
 
 #bluetxth4 {
-  color:#007edf;
+  color:#FFAB00;
   padding:0px;
   margin-bottom:5px;
   margin-top:5px;
@@ -308,7 +315,7 @@ ul#navi_main li {
 }
    
  #bluetxth3 {
-  color:#007edf;
+  color:#FFAB00;
   padding:0px;
   margin-bottom:5px;
   margin-top:10px;
@@ -341,7 +348,7 @@ ul#navi_main li.mainmenupoint:hover {
 
 /*Untermenuepunte - Liste*/
  
-ul#navi_main li ul.dropdown_navi_home {
+ul#navi_main li ul.dropdown_navi_einzel {  /*normale Breite für einen normalen Einzelpunkt*/
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
   /*border-top-right-radius: 10px;*/
@@ -357,7 +364,7 @@ ul#navi_main li ul.dropdown_navi_home {
   width:160px;
 }
 
-ul#navi_main  li  ul.dropdown_navi_home:hover {
+ul#navi_main  li  ul.dropdown_navi_einzel:hover {
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
   /*border-top-right-radius: 10px;*/
@@ -373,7 +380,7 @@ ul#navi_main  li  ul.dropdown_navi_home:hover {
   width:160px;
 }
 
-ul#navi_main li ul.dropdown_navi_projekte {
+ul#navi_main li ul.dropdown_navi_doppel {   /*doppelte Breite für zwei normale Einzelpunkte*/
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
   border-top-right-radius: 10px;
@@ -386,10 +393,10 @@ ul#navi_main li ul.dropdown_navi_projekte {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:400px;
+  width:320px;
 }
 
-ul#navi_main  li  ul.dropdown_navi_projekte:hover {
+ul#navi_main  li  ul.dropdown_navi_doppel:hover {
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
   border-top-right-radius: 10px;
@@ -402,13 +409,13 @@ ul#navi_main  li  ul.dropdown_navi_projekte:hover {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:400px;
+  width:320px;
 }
 
-ul#navi_main li ul.dropdown_navi_downloads {
+ul#navi_main li ul.dropdown_navi_dreifach {   /*dreifache Breite für drei normale Einzelpunkte*/
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
-  /*border-top-right-radius: 10px;*/
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   left: 0;
@@ -418,13 +425,13 @@ ul#navi_main li ul.dropdown_navi_downloads {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:160px;
+  width:480px;
 }
 
-ul#navi_main  li  ul.dropdown_navi_downloads:hover {
+ul#navi_main  li  ul.dropdown_navi_dreifach:hover {
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
-  /*border-top-right-radius: 10px;*/
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   left: 0;
@@ -434,13 +441,13 @@ ul#navi_main  li  ul.dropdown_navi_downloads:hover {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:160px;
+  width:480px;
 }
 
-ul#navi_main li ul.dropdown_navi_kontakt {
+ul#navi_main li ul.dropdown_navi_vierfach {   /*vierfache Breite für vier normale Einzelpunkte*/
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
-  /*border-top-right-radius: 10px;*/
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   left: 0;
@@ -450,13 +457,13 @@ ul#navi_main li ul.dropdown_navi_kontakt {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:160px;
+  width:640px;
 }
 
-ul#navi_main  li  ul.dropdown_navi_kontakt:hover {
+ul#navi_main  li  ul.dropdown_navi_vierfach:hover {
   background-color:#373737;
   box-shadow: 2px 2px 0px #000000;
-  /*border-top-right-radius: 10px;*/
+  border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   left: 0;
@@ -466,9 +473,44 @@ ul#navi_main  li  ul.dropdown_navi_kontakt:hover {
   left:-5px;
   margin-bottom:15px;
   height:auto;
-  width:160px;
+  width:640px;
 }
-  /**/
+
+/*sonderbreiten*/
+
+ul#navi_main li ul.dropdown_navi_einzelcommafuenf {   /*1,5fache Breite für einen breiten Einzelpunkt*/
+  background-color:#373737;
+  box-shadow: 2px 2px 0px #000000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  left: 0;
+  padding: 0px;
+  position: absolute;
+  top:50px;
+  left:-5px;
+  margin-bottom:15px;
+  height:auto;
+  width:235px;
+}
+
+ul#navi_main  li  ul.dropdown_navi_einzelcommafuenf:hover {
+  background-color:#373737;
+  box-shadow: 2px 2px 0px #000000;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  left: 0;
+  padding: 0px;
+  position: absolute;
+  top:50px;
+  left:-5px;
+  margin-bottom:15px;
+  height:auto;
+  width:235px;
+}
+  
+/**/
   
   
 .menu_link {
@@ -476,32 +518,88 @@ ul#navi_main  li  ul.dropdown_navi_kontakt:hover {
 }
 
 /*Untermenuepunkte - Einzelpunkte*/
-
 ul#navi_main li ul li {
   float: left;
   text-align: center;
-  /*display: block;*/
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   position:relative;
-  top:0px;
+  top: 0px;
   margin: 20px;
+  width: 110px;
 }
      
 ul#navi_main li ul li:hover {
   float: left;
   text-align: center;
-  /*display: block;*/
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color:#575757;
   text-decoration: none;
   border-radius: 10px;
   position:relative;
-  top:0px;
+  top: 0px;
   margin: 20px;
+  width: 110px;
+}
+
+ul#navi_main li ul li.normal {
+  float: left;
+  text-align: center;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 110px;
+}
+     
+ul#navi_main li ul li.normal:hover {
+  float: left;
+  text-align: center;
+  background-color:#575757;
+  text-decoration: none;
+  border-radius: 10px;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 110px;
+}
+
+ul#navi_main li ul li.breit {
+  float: left;
+  text-align: center;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 185px;
+}
+     
+ul#navi_main li ul li.breit:hover {
+  float: left;
+  text-align: center;
+  background-color:#575757;
+  text-decoration: none;
+  border-radius: 10px;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 185px;
+}
+
+ul#navi_main li ul li.sehr_breit {
+  float: left;
+  text-align: center;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 270px;
+}
+     
+ul#navi_main li ul li.sehr_breit:hover {
+  float: left;
+  text-align: center;
+  background-color:#575757;
+  text-decoration: none;
+  border-radius: 10px;
+  position:relative;
+  top: 0px;
+  margin: 20px;
+  width: 270px;
 }
 
 li#home_unterpunkt {
@@ -529,6 +627,7 @@ ul#navi_main li:hover>ul {
 /*Maincontent oder Hauptteil*/ 
 
 .outer {
+  min-width:100px;
   width: 100%;
 }  
 
@@ -538,33 +637,47 @@ ul#navi_main li:hover>ul {
   border-bottom: 1px solid #111;
 }
 
-/*section*/
+#main_content_wrap h1 {
+  text-decoration: bold;
+}
+
+#main_content_wrap h2 {
+  text-decoration: underline;
+}
+
+/*section + Inhalt*/
 
 #main_content {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .inner {
   position: relative;
-  max-width: 640px;
+  width: 600px;
   padding: 20px 10px;
   margin: 0 auto;
 }
 
-/*Inhalt*/
+/*footer*/
 
+#footer_wrap {
+  background: #212121;
+}
 
+footer.inner {
+   min-width: 320px;
+   max-width: 480px;
+}
+  
+/*lesbarkeit auf handys etc*/                              /*-----------------!!!UNFERTIG!!!-----------------*/
 
+@media screen and (min-width: 481px) {
+  body {
+     width:1280px;
+  }
+}
 
-
-
-
-
-
-
-
-   
-/*lesbarkeit auf handys etc*/
 
 @media screen and (max-width: 480px) {
   body {
@@ -616,8 +729,28 @@ ul#navi_main li:hover>ul {
 
 }
 
+@media screen and (min-width: 1281px) {
+  form {
+    width:1920px;
+	margin:0px;
+	padding:0px;
+  }
 
-/*
+  html {
+    width:1920px;
+	margin:0px;
+	padding:0px;
+  }
+  
+  body {
+    width:1920px;
+	margin:0px;
+	padding:0px; 
+  }
+}
+
+
+/*other stuff */
 
 #forkme_banner {
   display: block;
@@ -672,12 +805,3 @@ ul#navi_main li:hover>ul {
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
 }
-
-
-
-#footer_wrap {
-  background: #212121;
-}
-
-
-*/
