@@ -1,2 +1,2 @@
 # yngamers.github.io
-all projekts are made by us and github
+all projekts are made by YNGamers and github
