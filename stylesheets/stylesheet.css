@@ -695,29 +695,6 @@ footer.inner {
 }
   
 /*lesbarkeit auf handys etc*/                              /*-----------------!!!UNFERTIG!!!-----------------*/
-header#headerinner {
-  position: relative;
-  width: auto;
-  padding: 20px 10px;
-  margin-left: 600px;
-  margin-right: 600px;
-}
-
-#main_content_wrap {
-  min-width:100px auto;
-  position:relative;
-  margin-top:50px;
-  margin-left:600px;
-  margin-right:600px;
-  background: #f2f2f2;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 3px 3px 0px #000000;
-}
 
 @media screen and (max-width: 480px) {
   body {
@@ -802,6 +779,15 @@ ul#navi_main li.mainmenupoint:hover {
     max-width: 480px;
     font-size: 11px;
   }
+  
+  iframe#ytvideo {
+	  width:380px;
+	  height:213px;
+  }
+  
+  img  {
+	  max-width:360px;
+  }
 
 }
 
@@ -854,6 +840,15 @@ ul#navi_main li.mainmenupoint:hover {
   
   .inner {
     width:380px;
+  }
+  
+  iframe#ytvideo {
+	  width:380px;
+	  height:213px;
+  }
+  
+  img  {
+	  max-width:380px;
   }
 }
 
@@ -915,6 +910,11 @@ ul#navi_main li.mainmenupoint:hover {
   
   .inner {
     width:600px;
+  }
+  
+  iframe#ytvideo {
+	  width:600px;
+	  height:337px;
   }
 }
 
