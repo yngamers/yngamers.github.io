@@ -916,6 +916,10 @@ ul#navi_main li.mainmenupoint:hover {
 	  width:600px;
 	  height:337px;
   }
+  
+  img  {
+	  max-width:600px;
+  }
 }
 
 
