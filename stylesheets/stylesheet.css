@@ -846,7 +846,7 @@ ul#navi_main li.mainmenupoint:hover {
     width:380px;
   }
   
-  iframe#ytvideo {
+  iframe {
 	  width:380px;
 	  height:213px;
   }
