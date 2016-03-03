@@ -851,7 +851,7 @@ ul#navi_main li.mainmenupoint:hover {
 	  height:213px;
   }
   
-  iframe#overviewmap {
+  iframe {
 	  width:380px;
 	  height:213px;
   }
